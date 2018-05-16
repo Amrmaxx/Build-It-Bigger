@@ -95,7 +95,7 @@ public class MainActivityFree extends Activity {
             String name = params[0].second;
 
             try {
-                return myApiService.sayHi(name).execute().getData();
+                return myApiService.joke().execute().getData();
             } catch (IOException e) {
                 return e.getMessage();
             }
